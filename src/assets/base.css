@@ -5,9 +5,9 @@
 
 @layer base {
   @font-face {
-    font-family: 'Lucida Blackletter';
-    src:
-      url('@/assets/fonts/lucindablack.ttf') format('ttf');
+    font-family: 'Lucida Blackletter Regular';
+    src: local('Lucida Blackletter Regular'),
+      url('@/assets/fonts/Lucida Blackletter Regular.woff') format('woff');
     font-weight: 400;
     font-style: normal;
   }

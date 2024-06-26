@@ -4,9 +4,9 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        'lucida-black': ['Lucida Blackletter', 'serif'],
-        'raleway': ["Raleway", 'sans-serif'],
-        'material-symbols-outlined': ["Material Symbols Outlined", 'sans-serif']
+        'lucida-black': ['Lucida Blackletter Regular', 'serif'],
+        raleway: ['Raleway', 'sans-serif'],
+        'material-symbols-outlined': ['Material Symbols Outlined', 'sans-serif']
       }
     }
   },
