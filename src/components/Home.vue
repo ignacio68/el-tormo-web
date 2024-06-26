@@ -4,9 +4,8 @@ import HomeView from '@/components/HomeView.vue'
 import TheFooter from '@/components/TheFooter.vue'
 </script>
 <template>
-  <div></div>
-  <!-- <TheNavBar></TheNavBar>
+  <TheNavBar></TheNavBar>
   <HomeView></HomeView>
-  <TheFooter></TheFooter> -->
+  <TheFooter></TheFooter>
 </template>
 <style lang="sass" scoped></style>
