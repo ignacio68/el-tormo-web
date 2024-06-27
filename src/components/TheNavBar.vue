@@ -7,7 +7,7 @@
       <h5>El restaurante de comida manchega en Madrid</h5>
     </template>
     <template #header>
-      <n-menu v-model:value="activeKey" mode="horizontal" :options="menuOptions" />
+      <n-menu mode="horizontal" :options="menuOptions" />
     </template>
   </n-page-header>
 </template>
