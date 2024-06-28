@@ -6,9 +6,9 @@ import i18n from './i18n'
 
 // import App from './App.vue'
 // import Home from './components/Home.vue'
-import RedirectView from './views/RedirectView.vue'
+import Maintenance from './views/Maintenance.vue'
 
-const app = createApp(RedirectView)
+const app = createApp(Maintenance)
 app.use(i18n)
 
 // app.use(router)
