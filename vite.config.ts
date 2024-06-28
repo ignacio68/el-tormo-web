@@ -1,11 +1,11 @@
 import { fileURLToPath, URL } from 'node:url'
 import { resolve, dirname } from 'node:path'
 import { defineConfig } from 'vite'
+import { configDefaults } from 'vitest/config'
 import vue from '@vitejs/plugin-vue'
 import VueDevTools from 'vite-plugin-vue-devtools'
 import VueI18nPlugin from '@intlify/unplugin-vue-i18n/vite'
 
-// https://vitejs.dev/config/
 export default defineConfig({
   plugins: [
     vue(),
@@ -21,9 +21,15 @@ export default defineConfig({
   test: {
     // enable jest-like global test APIs
     globals: true,
-    // simulate DOM with happy-dom
-    // (requires installing happy-dom as a peer dependency)
-    environment: 'happy-dom'
+    root: './src/',
+    exclude: [...configDefaults.exclude, 'e2e/**'],
+    environment: 'happy-dom',
+    setupFiles: ['./src/tests/drivers/vitest/setup.ts'],
+    coverage: {
+      provider: 'v8',
+      reporter: ['text', 'json', 'html'],
+      reportsDirectory: `./src/tests/drivers/vitest/coverage`
+    }
   },
   resolve: {
     alias: {
