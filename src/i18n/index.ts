@@ -1,9 +1,9 @@
 import { createI18n } from 'vue-i18n'
-import en from './locales/en'
-import es from './locales/es'
-import fr from './locales/fr'
-import it from './locales/it'
-import ru from './locales/ru'
+import enMessages from './locales/en'
+import esMessages from './locales/es'
+import frMessages from './locales/fr'
+import itMessages from './locales/it'
+import ruMessages from './locales/ru'
 
 const userLanguage = window.navigator.language.split('-')[0]
 
@@ -12,11 +12,11 @@ const i18n = createI18n({
   legacy: false,
   globalInjection: true,
   messages: {
-    en,
-    es,
-    fr,
-    it,
-    ru
+    en: enMessages,
+    es: esMessages,
+    fr: frMessages,
+    it: itMessages,
+    ru: ruMessages
   }
 })
 
