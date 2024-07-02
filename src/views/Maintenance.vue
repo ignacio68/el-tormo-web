@@ -28,7 +28,7 @@
         <img
           id="logo"
           alt="El Tormo logo"
-          class="pt-4 w-[360px] md:w-[400px] lg:w-[600px] grow-0"
+          class="pt-4 w-[360px] md:w-[400px] lg:w-[560px] grow-0"
           src="@/assets/illustrations/Restaurant-Chief.svg"
         />
         <div
