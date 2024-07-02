@@ -18,19 +18,7 @@ export default defineConfig({
       )
     })
   ],
-  test: {
-    // enable jest-like global test APIs
-    globals: true,
-    root: './src/',
-    exclude: [...configDefaults.exclude, 'e2e/**'],
-    environment: 'happy-dom',
-    setupFiles: ['./src/tests/drivers/vitest/setup.ts'],
-    coverage: {
-      provider: 'v8',
-      reporter: ['text', 'json', 'html'],
-      reportsDirectory: `./src/tests/drivers/vitest/coverage`
-    }
-  },
+
   resolve: {
     alias: {
       '@': fileURLToPath(new URL('./src', import.meta.url))
