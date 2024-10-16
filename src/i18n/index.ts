@@ -9,6 +9,7 @@ const userLanguage = window.navigator.language.split('-')[0]
 
 const i18n = createI18n({
   locale: userLanguage || import.meta.env.VITE_DEFAULT_LOCALE,
+  fallbackLocale: 'es',
   legacy: false,
   globalInjection: true,
   messages: {
