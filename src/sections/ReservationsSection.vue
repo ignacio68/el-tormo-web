@@ -4,6 +4,7 @@ import SectionTitle from './components/SectionTitle.vue'
 <template>
   <section id="reservations">
     <SectionTitle title="Reservas" />
+    <div class="h-[400px]"></div>
     <p class="mt-4">
       Para reservar, por favor llámanos al <strong>(123) 456-7890</strong> o
       visita nuestra página de reservas.
