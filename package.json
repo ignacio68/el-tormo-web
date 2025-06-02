@@ -28,6 +28,7 @@
     "@intlify/unplugin-vue-i18n": "^4.0.0",
     "@testing-library/vue": "^8.1.0",
     "autoprefixer": "^10.4.19",
+    "express": "^5.1.0",
     "outscraper": "^2.0.4",
     "pinia": "^2.1.7",
     "postcss": "^8.4.38",
