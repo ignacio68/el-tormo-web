@@ -1,6 +1,6 @@
 {
   "name": "el-tormo-web",
-  "version": "0.0.0",
+  "version": "0.1.1",
   "private": true,
   "type": "module",
   "scripts": {
@@ -13,7 +13,8 @@
     "type-check": "vue-tsc --noEmit -p tsconfig.app.json --composite false",
     "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts --fix --ignore-path .gitignore",
     "format": "prettier --write src/",
-    "prepare": "husky"
+    "prepare": "husky",
+    "start:redirect": "node src/index.js"
   },
   "husky": {
     "hooks": {
@@ -27,9 +28,13 @@
     "@intlify/unplugin-vue-i18n": "^4.0.0",
     "@testing-library/vue": "^8.1.0",
     "autoprefixer": "^10.4.19",
+    "outscraper": "^2.0.4",
     "pinia": "^2.1.7",
     "postcss": "^8.4.38",
+    "primeicons": "^7.0.0",
+    "primevue": "^4.1.1",
     "tailwindcss": "^3.4.4",
+    "tailwindcss-primeui": "^0.3.4",
     "vue": "^3.4.21",
     "vue-i18n": "^9.13.1",
     "vue-router": "^4.3.0"
@@ -55,9 +60,9 @@
     "husky": "^9.0.11",
     "jsdom": "^24.0.0",
     "lint-staged": "^15.2.7",
-    "naive-ui": "^2.38.2",
     "npm-run-all": "^4.1.5",
     "npm-run-all2": "^6.1.2",
+    "postcss-import": "^16.1.0",
     "prettier": "^3.2.5",
     "start-server-and-test": "^2.0.3",
     "typescript": "~5.4.0",
