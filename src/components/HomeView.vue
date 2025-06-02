@@ -8,14 +8,16 @@ import LocationSection from '@/sections/LocationSection.vue'
 import ReservationsSection from '@/sections/ReservationsSection.vue'
 </script>
 <template>
-  <main class="p-6">
-    <AboutSection />
-    <GallerySection />
-    <MenuSection />
-    <ReviewsSection />
-    <ReservationsSection />
-    <ContactSection />
-    <LocationSection />
+  <main class="w-screen bg-sky-950">
+    <div class="p-6">
+      <AboutSection />
+      <GallerySection />
+      <MenuSection />
+      <ReviewsSection />
+      <ReservationsSection />
+      <ContactSection />
+      <LocationSection />
+    </div>
   </main>
 </template>
 <style lang="scss" scoped></style>
