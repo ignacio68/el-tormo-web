@@ -2,7 +2,7 @@
 import express from 'express'
 const app = express()
 
-app.use((req, res) => {
+app.use((req, res, next) => {
   res.redirect(301, `https://eltormodeclara.com${req.originalUrl}`)
 })
 
