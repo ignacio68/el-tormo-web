@@ -1,7 +1,7 @@
 {
   "extends": "@vue/tsconfig/tsconfig.dom.json",
-  "include": ["env.d.ts", "src_old/**/*", "src_old/**/*.vue", "vitest.config.xxx"],
-  "exclude": ["src_old/**/__tests__/*"],
+  "include": ["env.d.ts", "src/**/*", "src/**/*.vue", "vitest.config.xxx"],
+  "exclude": ["src/**/__tests__/*"],
   "compilerOptions": {
     "composite": true,
     "baseUrl": ".",
@@ -14,7 +14,7 @@
     "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true,
     "paths": {
-      "@/*": ["src_old/*"]
+      "@/*": ["./src/*"]
     }
   }
 }

@@ -2,16 +2,8 @@
 import express from 'express'
 const app = express()
 
-app.use((req, res, next) => {
-  const host = req.headers.host
-  if (
-    host === 'eltormorestaurante.com' ||
-    host === 'www.eltormorestaurante.com'
-  ) {
-    const redirectTo = `https://eltormodeclara.com${req.originalUrl}`
-    return res.redirect(301, redirectTo)
-  }
-  next()
+app.use((req, res) => {
+  res.redirect(301, `https://eltormodeclara.com${req.originalUrl}`)
 })
 
 // Tu lógica habitual
